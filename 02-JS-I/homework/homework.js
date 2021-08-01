@@ -3,10 +3,10 @@
 const { stringify } = require("git-url-parse");
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = "HOLA";
+const nuevaString = "Voy a aprobar el ingreso";
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = 1;
+const nuevoNum = 10;
 
 // Crea una variable booleana:
 const nuevoBool = true;
@@ -68,8 +68,7 @@ function sonIguales(x, y) {
   // Tu código:
   if (x === y){
     return true;
-  } 
-    return false;
+  } return false;
 }
 
 function tienenMismaLongitud(str1, str2){
@@ -78,18 +77,14 @@ function tienenMismaLongitud(str1, str2){
   // Tu código:
   if (str1.lenght === str2.lenght){
     return true;
-  }
-  return false;
+  } return false;
 }
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num < 90) {
-    return true;
-  }
-    return false;
+  if (num < 90) {return true;}else return false;
 }
 
 function mayorQueCincuenta(num) {
@@ -114,7 +109,7 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if ((num % 2) == 0) {
+  if ((num % 2) === 0) {
     return true;
     }
     return false;
@@ -125,7 +120,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if ((num % 2) ==! 0) {
+  if ((num % 2) !== 0) {
     return true;
   }
     return false;
@@ -136,16 +131,16 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  var cuadrado = Math.pow(num,2);
+  var cuadrado = Math.pow(num, 2);
   return cuadrado;
-   }
+  }
 
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  var cuadrado = Math.pow(num,3);
-  return cuadrado;
+  var cubo = Math.pow(num,3);
+  return cubo;
 }
 
 function elevar(num, exponent) {
@@ -256,9 +251,10 @@ function esVocal(letra){
   if (letra.lenght > 1){
     return "Dato incorrecto";
   }
-  if (letra == "a","e","i","o","u"){
+  if (letra === "a"|| letra === "e"|| letra === "i"|| letra === "o"|| letra === "u"){
     return "Es vocal";
   }
+    return "Dato incorrecto";
 }
 
 
